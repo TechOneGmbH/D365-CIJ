@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = TechOne.D365.CIJ
+build_property.ProjectDir = C:\Users\ChristophMäder\source\repos\TechOneGmbH\D365-CIJ\TechOne.D365.CIJ\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
