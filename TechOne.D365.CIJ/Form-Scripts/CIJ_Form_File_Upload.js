@@ -1,5 +1,10 @@
 /***** BEGIN - INIT FILEUPLOAD CONTROLS *****/
 
+
+document.addEventListener("d365mkt-afterformload", function () {
+    CreateFileUploadControls();
+});
+
 document.addEventListener("d365mkt-formsubmit", function (event) {
 
     var controls = document.querySelectorAll("input[type='file']");
@@ -16,9 +21,8 @@ document.addEventListener("d365mkt-formsubmit", function (event) {
 
 });
 
-document.addEventListener("d365mkt-afterformload", function () {
-    CreateFileUploadControls();
-});
+var allowedFileExtensions = ".jpg,.gif,.png,.pdf,.mp3,.mp4";
+
 
 function CreateFileUploadControls() {
 
@@ -30,8 +34,6 @@ function CreateFileUploadControls() {
         }
     });
 }
-
-var allowedFileExtensions = ".jpg,.gif,.png,.pdf,.mp3,.mp4";
 
 function CreateFileUploadControl(textBoxControl) {
 
@@ -115,7 +117,9 @@ function load_files(fileControls) {
 
 function sendFile(json) {
 
-    var theUrl = "https://6c8c368728e9e387ad02e4ec693997.5b.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/65ac9ed10b8e4c089f65ef34617df427/triggers/manual/paths/invoke?api-version=1"; // This URL is Environment specific
+     // This URL is Environment specific
+     
+    var theUrl = "https://a002bd953ee4e3d0a9b712aab0ffda.4c.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/63fddbab61a44472a27d8e7c14c27f0b/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ABL40Ak392UKVK6kl0_Ec5o73s-zFnRpYtHRmp89gH0";
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {

@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("d365mkt-afterformload", function () {
     translateForm();
 });
@@ -32,8 +29,10 @@ function translate(tagName) {
 
         if (lang.startsWith("en") && currentElementTexts.length >= 2) {
             newElementText = currentElementTexts[1];
-        } else if (lang.startsWith("fr") && currentElementTexts.length >= 3) {
+        } else if (lang.startsWith("es") && currentElementTexts.length >= 3) {
             newElementText = currentElementTexts[2];
+        } else if (lang.startsWith("pt") && currentElementTexts.length >= 3) {
+            newElementText = currentElementTexts[3];
         }
 
         elements[i].innerHTML = newElementText;
