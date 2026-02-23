@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ChristophM\u00E4der\\source\\repos\\TechOneGmbH\\D365-CIJ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72DAB05E-B99D-4BCF-8155-C13D9F97F3D9}|TechOne.D365.CIJ\\TechOne.D365.CIJ.csproj|c:\\users\\christophm\u00E4der\\source\\repos\\techonegmbh\\d365-cij\\techone.d365.cij\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72DAB05E-B99D-4BCF-8155-C13D9F97F3D9}|TechOne.D365.CIJ\\TechOne.D365.CIJ.csproj|solutionrelative:techone.d365.cij\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ChristophM\u00E4der\\source\\repos\\TechOneGmbH\\D365-CIJ\\TechOne.D365.CIJ\\Class1.cs",
+              "RelativeDocumentMoniker": "TechOne.D365.CIJ\\Class1.cs",
+              "ToolTip": "C:\\Users\\ChristophM\u00E4der\\source\\repos\\TechOneGmbH\\D365-CIJ\\TechOne.D365.CIJ\\Class1.cs",
+              "RelativeToolTip": "TechOne.D365.CIJ\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T14:24:31.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
