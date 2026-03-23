@@ -21,21 +21,25 @@ document.addEventListener("d365mkt-formsubmit", function (event) {
 
 });
 
-var allowedFileExtensions = ".jpg,.gif,.png,.pdf,.mp3,.mp4";
-
 
 function CreateFileUploadControls() {
 
     var controls = document.querySelectorAll("input");
 
     controls.forEach(function (textBoxControl) {
-        if (textBoxControl.placeholder == "FileUpload") {
+        if (textBoxControl.placeholder.startsWith("FileUpload")) {
             CreateFileUploadControl(textBoxControl);
         }
     });
 }
 
 function CreateFileUploadControl(textBoxControl) {
+
+    var allowedFileExtensions = ".jpg,.gif,.png,.pdf,.mp3,.mp4";
+    
+    if(textBoxControl.placeholder.includes("|")){
+       allowedFileExtensions = textBoxControl.placeholder.split("|")[1] 
+    }
 
     var fileupload = document.createElement("input");
     fileupload.name = "fu_" + textBoxControl.name;

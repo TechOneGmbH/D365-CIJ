@@ -1,17 +1,13 @@
 
 function handleSessions() {
 
-    debugger;
-
     const timeParagraphs = document.querySelectorAll("div.eventSessionDescription p");
 
     timeParagraphs.forEach(p => {
 
         const spans = p.querySelectorAll("span.msdynmkt_personalization");
 
-        debugger;
-
-        if (spans.length === 3) { // start + end
+        if (spans.length === 3) {
             const [dateSpan, startSpan, endSpan] = spans;
 
             const dateCH = convertToCHdate(dateSpan.textContent.trim());
@@ -29,30 +25,18 @@ function handleSessions() {
     });
 }
 
-// Convert time to 24-hour
 function convertToCHdate(timeStr) {
 
-    // Datum parsen
     const date = new Date(timeStr);
 
-    // Tag, Monat, Jahr extrahieren
     const day = date.getDate();
-    const month = date.getMonth() + 1; // Monate sind 0-basiert
+    const month = date.getMonth() + 1;    
     const year = date.getFullYear();
 
-    // Format erzeugen: 6.5.2026
-    const formatted = `${day}.${month}.${year}`;
-
-    console.log(formatted);
-
-    return formatted;
-
+    return `${day}.${month}.${year}`;
 }
 
-// Convert time to 24-hour
 function convertTo24(timeStr) {
-
-    debugger;
 
     const timePatternShort = /^(0?[1-9]|1[0-2]):([0-5]\d)\s?(AM|PM)$/i;
     if (timePatternShort.test(timeStr)) {
@@ -67,8 +51,6 @@ function convertTo24(timeStr) {
         return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
     }
 
-
-    debugger;
     const timePatternLong = /^(?<weekday>Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s+(?<month>January|February|March|April|May|June|July|August|September|October|November|December)\s+(?<day>0?[1-9]|[12]\d|3[01]),\s+(?<year>\d{4})\s+(?<hour>0?[1-9]|1[0-2]):(?<minute>[0-5]\d)(?::(?<second>[0-5]\d))?\s+(?<ampm>AM|PM)$/;
 
     if (timePatternLong.test(timeStr)) {
